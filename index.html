@@ -29,10 +29,10 @@
             padding: 2rem;
         }
 
-        /* Header with company name */
         .header {
             text-align: center;
             padding: 3rem 0;
+            position: relative;
         }
 
         .company-name {
@@ -47,10 +47,17 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            position: relative;
         }
 
-        /* Main content area */
+        .quill {
+            position: absolute;
+            top: -2rem;
+            left: 50%;
+            transform: translateX(-50%) rotate(-10deg);
+            width: 120px;
+            opacity: 0.9;
+        }
+
         .main-content {
             flex: 1;
             display: flex;
@@ -88,7 +95,6 @@
             right: -150px;
         }
 
-        /* Footer with contact info */
         .footer {
             text-align: center;
             padding: 3rem 0;
@@ -112,7 +118,6 @@
             text-shadow: 0 0 8px rgba(210, 210, 210, 0.5);
         }
 
-        /* Responsive design */
         @media (max-width: 768px) {
             .company-name {
                 font-size: 2.5rem;
@@ -137,12 +142,16 @@
                 right: -75px;
             }
 
+            .quill {
+                width: 80px;
+                top: -1.5rem;
+            }
+
             .container {
                 padding: 1rem;
             }
         }
 
-        /* Subtle animation */
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -173,7 +182,8 @@
 </head>
 <body>
     <div class="container">
-<header class="header">
+        <header class="header">
+            <img src="/path/to/your/quill-image.png" alt="Quill" class="quill">
             <h1 class="company-name">ENTARO</h1>
         </header>
 
