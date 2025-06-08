@@ -36,10 +36,12 @@
         }
 
         .company-name-wrapper {
-            display: inline-flex;
-            align-items: flex-end;
-            justify-content: center;
-        }
+   	     position: relative;
+     	     display: inline-block;
+    	     text-align: center;
+	     margin: 60px auto 0 auto;
+	}
+
 
         .company-name {
             font-size: 4rem;
@@ -57,11 +59,13 @@
         }
 
         .quill {
-            width: 80px;
-            margin-left: -10px;
-            transform: rotate(12deg);
-            margin-bottom: 8px;
-        }
+  	    position: absolute;
+    	    right: -120px;
+    	    bottom: -45px;
+    	    width: 150px;
+    	    transform: rotate(12deg);
+	}
+
 
         .main-content {
             flex: 1;
@@ -148,8 +152,8 @@
             }
 
             .quill {
-                width: 60px;
-                margin-bottom: 6px;
+                width: 90px;
+                margin-bottom: 10px;
             }
 
             .container {
