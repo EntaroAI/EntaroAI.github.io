@@ -35,6 +35,12 @@
             position: relative;
         }
 
+        .company-name-wrapper {
+            display: inline-flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
         .company-name {
             font-size: 4rem;
             font-weight: bold;
@@ -47,15 +53,14 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            display: inline-block;
         }
 
         .quill {
-            position: absolute;
-            top: -2rem;
-            left: 50%;
-            transform: translateX(-50%) rotate(-10deg);
-            width: 120px;
-            opacity: 0.9;
+            width: 80px;
+            margin-left: -10px;
+            transform: rotate(12deg);
+            margin-bottom: 8px;
         }
 
         .main-content {
@@ -143,8 +148,8 @@
             }
 
             .quill {
-                width: 80px;
-                top: -1.5rem;
+                width: 60px;
+                margin-bottom: 6px;
             }
 
             .container {
@@ -183,8 +188,10 @@
 <body>
     <div class="container">
         <header class="header">
-            <img src="quill-image.png" alt="Quill" class="quill">
-            <h1 class="company-name">ENTARO</h1>
+            <div class="company-name-wrapper">
+                <h1 class="company-name">ENTARO</h1>
+                <img src="quill-image.png" alt="Quill" class="quill">
+            </div>
         </header>
 
         <main class="main-content">
